@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: hsl(11, 31%, 10%);
+    --headline: hsl(300, 5%, 4%);
+    --paragraph: hsl(208, 56%, 5%);
+    --brand-beige: hsl(300, 8%, 63%);
+    --brand-light: hsl(0, 21%, 82%);
+
+    font-size: 62.5%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'DM Sans';
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.wrapper {
+    width: min(37rem, 100%);
+    margin-inline: auto;
+    padding-inline: 2.5ram;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    width: 37.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.1rem;
+}
+
+header::before {
+    content: "";
+    width: 100%;
+    height: 111.5rem;
+    background-color: var(--brand-light);
+    display: block;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+
+header h1 {
+    font-size: 3.4rem;
+    color: var(--headline);
+    line-height: 130%;
+    margin-bottom: 0.4rem;
+}
+
+header h2 {
+    font-size: 2.0rem;
+    color: var(--primary-color);
+    margin-bottom: 2.4rem;
+}
+
+header h3 {
+    margin-bottom: 2.4rem;
+}
+
+header p {
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--paragraph);
+    margin-bottom: 2.5rem;
+}
+
+header button {
+    background-color: hsl(8, 69%, 50%);
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    height: 3.5rem;
+    width: 9rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    font-weight: 520;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer
+}
+
+button:focus{
+    background:rgb(32, 6, 175);
+}
+
+header a {
+    text-decoration: none;
+}
+
+header img {
+    margin-bottom: 2.0rem;
+    width: 26.4rem;
+    display: block;
+    margin-inline: auto;
+    object-position: 0 2rem;
+}
+
+.stats{
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    margin-inline: auto;
+
+    background-color: var(--brand-beige);
+    border: 1px solid var(--brand-light);
+    border-radius: 0.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.stats p {
+    margin: 0;
+    line-height: 50%;
+}
+
+nav img {
+    margin-bottom: 0.0rem;
+    width: 15.4rem;
+    display: block;
+    margin-inline: auto;
+    object-position: 0 -2rem;
+}
+
+nav {
+    background: hsl(0, 0%, 100%);
+}
+
+.menu ul a {
+    color: rgb(0, 6, 2);
+    text-decoration: none;
+}
+
+.menu ul h3 {
+    margin-top: 2.0rem;
+    padding-bottom: 0rem;
+}
+
+.roupinhas img {
+    margin-bottom: 0.0rem;
+    width: 30.4rem;
+    display: block;
+    margin-inline: auto;
+    object-position: 0 -2rem;
+}
+
+.final h3 {
+    padding-bottom: 2rem;
+}
+
+/*==========Responsivo==========*/
+
+/*@media (min-width: 1024px) {
+    .wrapper {
+        width: min(142rem, 100%);
+    }
+}/*
